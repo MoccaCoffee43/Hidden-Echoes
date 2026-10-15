@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Hidden Echoes :D</title>
+    <link rel="stylesheet" href="1esticont.css">
+</head>
+<body>
+    <header>
+        <h1>Hidden Echoes :D</h1>
+    </header>
+    <nav class="barrasuper">
+        <ul>
+            <li><a href="pagina1.html">Premisa</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="lugares.html">Lugares</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="conteprinci">
+        <section class="infocon">
+            <h2>¡Ponte en contacto!</h2>
+            <p>Si tienes dudas, sugerencias o simplemente quieres hablar sobre el universo de Hidden Echoes, déjanos un mensaje en el formulario o búscanos en nuestras redes oficiales.</p>
+            <div class="redescon">
+                <button class="itemcopiar" data-copiar="watcherhollow2023@gmail.com">
+                    <span><strong>Correo:</strong> watcherhollow2023@gmail.com</span>
+                    <span class="alercopia">¡Copiado!</span>
+                </button>
+                <button class="itemcopiar" data-copiar="+52 1 844 534 2096">
+                    <span><strong>Teléfono:</strong> +52 1 844 534 2096</span>
+                    <span class="alercopia">¡Copiado!</span>
+                </button>
+                <button class="itemcopiar" data-copiar="+51 923 984 223">
+                    <span><strong>Teléfono:</strong> +51 923 984 223</span>
+                    <span class="alercopia">¡Copiado!</span>
+                </button>
+            </div>
+        </section>
+        <div class="form-container">
+            <h2>Enviar comentario</h2>
+            <div id="mensaje-confirmacion" class="oculto"></div>
+            <form id="formulario-registro" action="#" method="POST" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre/Nickname:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Inserte Nickname chevere">
+                    <span class="error-msg" id="error-nombre"></span>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="correo@example.com">
+                    <span class="error-msg" id="error-correo"></span>
+                </div>    
+                <div class="form-group">
+                    <label for="comentario">Comentarios (Mínimo 10 caracteres):</label>
+                    <textarea id="comentario" name="comentario" required minlength="10" rows="4" placeholder="Escribe aquí tu opinión..."></textarea>
+                    <span class="error-msg" id="error-comentario"></span>
+                </div>
+                <button type="submit">Enviar Comentario</button>
+            </form>
+        </div>
+    </main>
+    <script src="1pagina.js"></script>
+</body>
+</html>

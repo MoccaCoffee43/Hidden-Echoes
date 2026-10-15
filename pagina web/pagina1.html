@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premisa - Hidden Echoes</title>
+    <link rel="stylesheet" href="1pagina.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hidden Echoes</h1>
+    </header>
+
+    <nav class="barrasuper">
+        <ul>
+            <li><a href="pagina1.html" class="activo">Premisa</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="lugares.html">Lugares</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor general de la página -->
+    <main class="conteprinci-vertical">
+        
+        <!-- Bloque de la Foto Resumen (Mucho más grande) -->
+        <div class="contemicrofoto">
+            <img src="imgpm/premisa.jpg" alt="Representación arqueológica de las primeras habilidades" class="imgpremi">
+        </div>
+
+        <!-- Contenedor exclusivo para enviar el formulario a la esquina inferior derecha -->
+        <div class="alineacion-formulario">
+            <div class="form-container">
+                <h2>Enviar comentario</h2>
+                <div id="mensaje-confirmacion" class="oculto"></div>
+                
+                <form id="formulario-registro" action="#" method="POST" novalidate>
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" placeholder="Inserte Nickname chévere">
+                        <span class="error-msg" id="error-nombre"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="correo@example.com">
+                        <span class="error-msg" id="error-correo"></span>
+                    </div>    
+                    
+                    <div class="form-group">
+                        <label for="comentario">Comentarios (Mínimo 10 caracteres):</label>
+                        <textarea id="comentario" name="comentario" required minlength="10" rows="4" placeholder="Escribe aquí tu opinión..."></textarea>
+                        <span class="error-msg" id="error-comentario"></span>
+                    </div>
+                    
+                    <button type="submit">Enviar Comentario</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="1pagina.js"></script>
+</body>
+</html>
